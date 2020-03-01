@@ -81,8 +81,6 @@ Abstract classes vs Interfaces
 | Can declare public, protected, and private concrete methods   | All methods that you declare or define (as default methods) are public  |
 | In Java multiple inheritance is not allowed so, one can only extend one abstract class.  | One can implement any number of interfaces.  |
 
-
-
 ## Method Overloading
 When two or more methods in a class have the same name but different parameters i.e. different number of parameters and/or different data types, then this phenomenon is called Method Overloading.
 
@@ -163,3 +161,9 @@ class Main {
 }
 ```
 
+## Constructor
+Constructor are used to initialize the object's state i.e. properties.
+- One can think of constructors as function/methods.
+- Constructors are called when an object is initialized.
+- In Java, contructors should have same name as of the class.
+- In JavaScript, one can use keyword called constructor()
