@@ -23,6 +23,38 @@ Encapsulation means wrapping up related data and mechanisms that manipulate the 
 Data Abstraction is the property by virtue of which only the essential details are displayed to the user.The trivial or the non-essentials units are not displayed to the user. Ex: A car is viewed as a car rather than its individual components.
 - In Java, abstarction can be achieved using Interfaces and Abstract Methods.
 
+## Class
+A class is a blueprint from which objects are created. It consists of related properties and methods.
+
+```
+class Person{
+
+  private string fullName;
+  
+  public Person(string fullName){
+    this.fullName = fullName;
+  }
+  
+  public getFullName(){
+  
+    return this.fullName;
+  
+  }
+
+}
+```
+
+## Object
+Object is an instance of a class. Objects represents real life entities.
+```
+//Refer to code above
+Person jon = new Person("Jon");
+jon.getFullName();//Jon
+
+Person jane = new Person("Jane");
+jane.getFullName();//Jane
+```
+
 ## Interfaces
 Interfaces are refrence types similar to a class, it only consists of constants, method declarations i.e . abstract methods, default methods, static methods and nested types.
 - Only static and default methods have method definations.
