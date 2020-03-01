@@ -19,7 +19,7 @@ Encapsulation means wrapping up related data and mechanisms that manipulate the 
 - So one can think of class as an example of encapsulation, as a class holds all the related properties and methods in it. 
 - It is also called data-hiding as the data in a class can be hidden from any outside code, by declaring all the variables in the       class as private and writing public methods in the class to set and get the values of variables.
 
-## Abstarction
+## Abstraction
 Data Abstraction is the property by virtue of which only the essential details are displayed to the user.The trivial or the non-essentials units are not displayed to the user. Ex: A car is viewed as a car rather than its individual components.
 - In Java, abstarction can be achieved using Interfaces and Abstract Methods.
 
