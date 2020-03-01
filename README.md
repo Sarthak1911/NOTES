@@ -42,8 +42,11 @@ Abstract classes vs Interfaces
 
 | Abstract classes  | Interfaces    |
 | ----------------- | ------------- |
-| Content Cell      | Content Cell  |
-| Content Cell      | Content Cell  |
+| Cannot be instantiated      | Cannot be instantiated |
+| Can be extended      | Can be implmented  |
+| Can declare fields that are not static and final      | All fields are automatically public, static, and final  |
+| Can declare public, protected, and private concrete methods   | All methods that you declare or define (as default methods) are public  |
+| In Java multiple inheritance is not allowed so, one can only extend one abstract class.  | One can implement any number of interfaces.  |
 
 
 
