@@ -29,6 +29,7 @@ Interfaces are refrence types similar to a class, it only consists of constants,
 - Interfaces cannot be instantiated i.e. one cannot create an object from an Interface.
 - All abstract, default, and static methods in an interface are implicitly public.
 - All constant values defined in an interface are implicitly public, static, and final.
+- Because ow Interfaces behave, they are also called as contracts.
 
 ## Abstract Classs
 An abstract class is a class that is declared abstract—it may or may not include abstract methods. Abstract classes cannot be instantiated, but they can be subclassed i.e. inherited.
