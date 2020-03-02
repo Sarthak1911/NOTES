@@ -167,3 +167,140 @@ Constructor are used to initialize the object's state i.e. properties.
 - Constructors are called when an object is initialized.
 - In Java, contructors should have same name as of the class.
 - In JavaScript, one can use keyword called constructor()
+
+# JavaScript Basics & Advanced Concepts
+
+## Inheritance in JavaScript
+Unlike Java, JavaScript uses prototypical inheritance. In simple terms instead of classes inheriting from classes, in JavaScript its objects inheriting from object.
+
+```
+//This is a constructor function for Person object
+//And we know that functions are also objects in JavaScript
+//So this function is also an object
+function Person(){
+  //...
+}
+//Create a new object using the Person constructor
+const circle = new Person();
+
+const array = new Array();
+ 
+```
+In the snippet above, the object circle will be derived from prototype of the constructor function which further will be derived from the root object. Root object doesn't have a prototype. Lets consider the array object, it will be derived from a prototype (i.e. constructor function) of Array which further will be derived from root prototype.
+
+
+## Abstraction in JavaScript
+In JavaScript, inorder to make properties and methods of an object abstract, one must declare them as local entities (Refer to the code below). So basic idea is to not use 'this' while declaring any property or method, to make it abstract.
+```
+function Person(fname, lname){
+  //These properties and methods can be accessed by using dot or bracket notations
+  this.fname = fname;
+  this.lname = lname;
+  this.displayName = () => {
+    console.log(fname + " " + lname);
+  };
+  
+  //These properties and methods cannot be accessed by using dot or bracket notations
+  //Hence these properties remain abstract or not reachable by outside world
+  let firstName = "Jon";
+  let lastName = "Doe";
+  displayFullName = () => {
+    console.log(fname + " " + lname);
+  };
+}
+```
+
+
+## Creating object in JavaScript
+There are three ways using which one can create objects in JavaScript.
+1. Using Object literal syntax.
+```
+const person = {
+  fname: 'Jon',
+  lname: 'Doe',
+  walk: function() {
+    console.log('Walking...');
+  }
+};
+
+```
+2. Using Factory function.
+```
+function createPerson(fname, lname){
+  return {
+    fname: fname,
+    lname: lname,
+    walk: function() {
+      console.log('Walking...');
+    }
+  };
+}
+//Create an object
+const jon = createPerson('Jon', 'Doe');
+jon.walk()//Walking...
+
+```
+3. Using Constructor function.
+```
+function Person(fname, lname){
+  this.fname = fname;
+  this.lname = lname;
+  
+  this.walk = function(){
+    console.log('Walking...');
+  }
+  
+}
+
+//Create an object
+const jon = new Person("Jon","Doe");
+jon.walk()//Walking...
+
+```
+When using the constructor function i.e. use new operator to create an object, three things happen in the following order.
+1. It will create an empty object.
+2. It will point 'this' to the object.
+3. It will return the newly created object.
+
+## Constructor property in JavaScript
+In JavaScript, all objects have a property called constructor. It holds the function that was used in order to create the object.
+
+## Value vs Refrence Types
+In JavaScript, 
+- Primimitives are copied by their value.
+- Objects are copied by their refrence.
+
+## Getter and Setters in JavaScript
+```
+function Person(){
+  let firstName = "";
+  
+  Object.defineProperty(this, 'firstName', {
+    get: function(){
+      return firstName;
+    },
+    set: function(value){
+      firstName = value;
+    }
+  });
+  
+}
+
+const person = new Person();
+
+person.firstName = "Jon";//Setter
+person.firstName;//"Jon"//Getter
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
