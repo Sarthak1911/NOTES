@@ -202,6 +202,20 @@ Parent parentJon = new Child();
 
 ```
 
+## Boxing or Autoboxing
+Converting a primitive type into a corresponding Wrapper or Object is called Boxing. 
+```
+int no = 10;
+Object objNo = no;
+```
+
+## Unboxing
+Converting a object type into a primitive type is called Unboxing.
+```
+Object objNo = no;
+
+int a = (int) objNo;
+```
 
 # JavaScript Basics & Advanced Concepts
 
