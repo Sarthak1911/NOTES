@@ -13,6 +13,7 @@ Polymorphism refers to the ability of OOP language to differntiate between entit
 Inheritance is a mechanism by which an OOP language allows one class inherit properties and methods of another class and/or interface.
 - The class and/or interface which is inherited is often called as Super, Parent, Base class.
 - The class inheriting is called Child, Sub, Derived class.
+- Is-A relation i.e. A car is a vehicle.
 
 ## Encapsulation
 Encapsulation means wrapping up related data and mechanisms that manipulate the data under a single unit. 
@@ -22,6 +23,10 @@ Encapsulation means wrapping up related data and mechanisms that manipulate the 
 ## Abstraction
 Data Abstraction is the property by virtue of which only the essential details are displayed to the user.The trivial or the non-essentials units are not displayed to the user. Ex: A car is viewed as a car rather than its individual components.
 - In Java, abstarction can be achieved using Interfaces and Abstract Methods.
+
+## Composition
+It's a type of inheritance where classes are associated with other classes rather than actually inheriting them. It can be practically achieved by having other classes as properties of a certain class.
+- It's a Has-A relation i.e. A car has an engine.
 
 ## Class
 A class is a blueprint from which objects are created. It consists of related properties and methods.
