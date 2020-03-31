@@ -173,6 +173,36 @@ Constructor are used to initialize the object's state i.e. properties.
 - In Java, contructors should have same name as of the class.
 - In JavaScript, one can use keyword called constructor()
 
+## Upcasting
+Converting a derived class to the base class.
+
+```
+class Parent{
+}
+
+class Child{
+}
+
+Child jon = new Child();
+
+Parent parentJon = (Parent) jon;
+
+```
+
+## Downcasting
+Converting base class to derived class.
+```
+class Parent{
+}
+
+class Child{
+}
+
+Parent parentJon = new Child();
+
+```
+
+
 # JavaScript Basics & Advanced Concepts
 
 ## Inheritance in JavaScript
